@@ -14,6 +14,15 @@
 		87EFDEBE1D6AE58D00749050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEBC1D6AE58D00749050 /* LaunchScreen.storyboard */; };
 		87EFDEC91D6AE58E00749050 /* gigaPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDEC81D6AE58E00749050 /* gigaPetTests.swift */; };
 		87EFDED41D6AE58E00749050 /* gigaPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDED31D6AE58E00749050 /* gigaPetUITests.swift */; };
+		87EFDEE41D6B616F00749050 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDEE31D6B616F00749050 /* DragImg.swift */; };
+		87EFDEE61D6B691000749050 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDEE51D6B691000749050 /* MonsterImg.swift */; };
+		87EFDEEC1D6CE63500749050 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEE71D6CE63500749050 /* bite.wav */; };
+		87EFDEED1D6CE63500749050 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEE81D6CE63500749050 /* cave-music.mp3 */; };
+		87EFDEEE1D6CE63500749050 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEE91D6CE63500749050 /* death.wav */; };
+		87EFDEEF1D6CE63500749050 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEEA1D6CE63500749050 /* heart.wav */; };
+		87EFDEF01D6CE63500749050 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEEB1D6CE63500749050 /* skull.wav */; };
+		87EFDEF41D6CEDB400749050 /* LogicSteps.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEF31D6CEDB400749050 /* LogicSteps.rtf */; };
+		87EFDEF61D6D0C9800749050 /* 8-Bit Madness copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEF51D6D0C9800749050 /* 8-Bit Madness copy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		87EFDECF1D6AE58E00749050 /* gigaPetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gigaPetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EFDED31D6AE58E00749050 /* gigaPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gigaPetUITests.swift; sourceTree = "<group>"; };
 		87EFDED51D6AE58E00749050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EFDEE31D6B616F00749050 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DragImg.swift; path = ../DragImg.swift; sourceTree = "<group>"; };
+		87EFDEE51D6B691000749050 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
+		87EFDEE71D6CE63500749050 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
+		87EFDEE81D6CE63500749050 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		87EFDEE91D6CE63500749050 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		87EFDEEA1D6CE63500749050 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		87EFDEEB1D6CE63500749050 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
+		87EFDEF31D6CEDB400749050 /* LogicSteps.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = LogicSteps.rtf; sourceTree = "<group>"; };
+		87EFDEF51D6D0C9800749050 /* 8-Bit Madness copy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-Bit Madness copy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,7 @@
 		87EFDEA71D6AE58D00749050 = {
 			isa = PBXGroup;
 			children = (
+				87EFDEF31D6CEDB400749050 /* LogicSteps.rtf */,
 				87EFDEB21D6AE58D00749050 /* gigaPet */,
 				87EFDEC71D6AE58E00749050 /* gigaPetTests */,
 				87EFDED21D6AE58E00749050 /* gigaPetUITests */,
@@ -97,12 +116,20 @@
 		87EFDEB21D6AE58D00749050 /* gigaPet */ = {
 			isa = PBXGroup;
 			children = (
-				87EFDEB31D6AE58D00749050 /* AppDelegate.swift */,
+				87EFDEE31D6B616F00749050 /* DragImg.swift */,
+				87EFDEE51D6B691000749050 /* MonsterImg.swift */,
 				87EFDEB51D6AE58D00749050 /* ViewController.swift */,
 				87EFDEB71D6AE58D00749050 /* Main.storyboard */,
 				87EFDEBA1D6AE58D00749050 /* Assets.xcassets */,
+				87EFDEE71D6CE63500749050 /* bite.wav */,
+				87EFDEE81D6CE63500749050 /* cave-music.mp3 */,
+				87EFDEE91D6CE63500749050 /* death.wav */,
+				87EFDEEA1D6CE63500749050 /* heart.wav */,
+				87EFDEEB1D6CE63500749050 /* skull.wav */,
+				87EFDEF51D6D0C9800749050 /* 8-Bit Madness copy.ttf */,
 				87EFDEBC1D6AE58D00749050 /* LaunchScreen.storyboard */,
 				87EFDEBF1D6AE58D00749050 /* Info.plist */,
+				87EFDEB31D6AE58D00749050 /* AppDelegate.swift */,
 			);
 			path = gigaPet;
 			sourceTree = "<group>";
@@ -193,6 +220,7 @@
 				TargetAttributes = {
 					87EFDEAF1D6AE58D00749050 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = PC6ZE95SDH;
 					};
 					87EFDEC31D6AE58E00749050 = {
 						CreatedOnToolsVersion = 7.2;
@@ -229,7 +257,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87EFDEF61D6D0C9800749050 /* 8-Bit Madness copy.ttf in Resources */,
+				87EFDEF01D6CE63500749050 /* skull.wav in Resources */,
+				87EFDEEC1D6CE63500749050 /* bite.wav in Resources */,
+				87EFDEEE1D6CE63500749050 /* death.wav in Resources */,
+				87EFDEEF1D6CE63500749050 /* heart.wav in Resources */,
+				87EFDEED1D6CE63500749050 /* cave-music.mp3 in Resources */,
 				87EFDEBE1D6AE58D00749050 /* LaunchScreen.storyboard in Resources */,
+				87EFDEF41D6CEDB400749050 /* LogicSteps.rtf in Resources */,
 				87EFDEBB1D6AE58D00749050 /* Assets.xcassets in Resources */,
 				87EFDEB91D6AE58D00749050 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87EFDEE61D6B691000749050 /* MonsterImg.swift in Sources */,
+				87EFDEE41D6B616F00749050 /* DragImg.swift in Sources */,
 				87EFDEB61D6AE58D00749050 /* ViewController.swift in Sources */,
 				87EFDEB41D6AE58D00749050 /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = gigaPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.gigaPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = gigaPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgenyvlasov.gigaPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
