@@ -12,6 +12,8 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet weak var monsterImg: MonsterImg!
+    @IBOutlet weak var humanImg: HumanImg!
+    
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImg: DragImg!
     
@@ -20,6 +22,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty3Img: UIImageView!
     
     @IBOutlet weak var gameOverLbl: UILabel!
+    
+    
+    @IBOutlet weak var stoneBtn: UIButton!
+    @IBOutlet weak var humanBtn: UIButton!
     
     
     let DIM_ALPHA: CGFloat = 0.2
@@ -39,12 +45,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+//        startNewGame()
         
+        monsterImg.hidden = true
+        humanImg.hidden = true
         
-        
-        startNewGame()
     }
     
     @IBAction func restartBtn(sender: AnyObject) {
@@ -57,12 +63,25 @@ class ViewController: UIViewController {
         
         // reveal character img, start the game.
         // hide buttons.
+        
+        humanImg.hidden = true
+        monsterImg.hidden = false
+        monsterImg.playIdleAnimation()
+        startNewGame()
+
     }
     
     @IBAction func humanBtn(sender: AnyObject) {
         
         // reveal the other character img, start the game. 
         // hide the buttons. 
+        
+        monsterImg.hidden = true
+        humanImg.hidden = false
+        
+        humanImg.playIdleAnimation()
+        
+        startNewGame()
         
     }
 
@@ -143,7 +162,8 @@ class ViewController: UIViewController {
         gameOverLbl.hidden = false
         timer.invalidate()
         
-        monsterImg.playDeathAnimation()
+            monsterImg.playDeathAnimation()
+            humanImg.playDeathAnimation()
         
         // this piece of code doesn't work for some reason
         
@@ -153,9 +173,15 @@ class ViewController: UIViewController {
     
     func startNewGame() {
         
+        monsterImg.playIdleAnimation()
+        humanImg.playIdleAnimation()
+        
+        
+        stoneBtn.hidden = true
+        humanBtn.hidden = true
+        
         penelaties = 0
         timer = nil
-        monsterImg.playIdleAnimation()
         gameOverLbl.hidden = true
         monsterHappy = false
         currentItem = 0

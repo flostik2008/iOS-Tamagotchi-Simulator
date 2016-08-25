@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871044B71D6EDC2500731A06 /* HumanImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871044B61D6EDC2500731A06 /* HumanImg.swift */; };
 		87EFDEB41D6AE58D00749050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDEB31D6AE58D00749050 /* AppDelegate.swift */; };
 		87EFDEB61D6AE58D00749050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EFDEB51D6AE58D00749050 /* ViewController.swift */; };
 		87EFDEB91D6AE58D00749050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EFDEB71D6AE58D00749050 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		871044B61D6EDC2500731A06 /* HumanImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumanImg.swift; path = ../HumanImg.swift; sourceTree = "<group>"; };
 		87EFDEB01D6AE58D00749050 /* gigaPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gigaPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EFDEB31D6AE58D00749050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87EFDEB51D6AE58D00749050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				87EFDEE31D6B616F00749050 /* DragImg.swift */,
 				87EFDEE51D6B691000749050 /* MonsterImg.swift */,
+				871044B61D6EDC2500731A06 /* HumanImg.swift */,
 				87EFDEB51D6AE58D00749050 /* ViewController.swift */,
 				87EFDEB71D6AE58D00749050 /* Main.storyboard */,
 				87EFDEBA1D6AE58D00749050 /* Assets.xcassets */,
@@ -295,6 +298,7 @@
 				87EFDEE41D6B616F00749050 /* DragImg.swift in Sources */,
 				87EFDEB61D6AE58D00749050 /* ViewController.swift in Sources */,
 				87EFDEB41D6AE58D00749050 /* AppDelegate.swift in Sources */,
+				871044B71D6EDC2500731A06 /* HumanImg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +531,7 @@
 				87EFDEDA1D6AE58E00749050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87EFDEDB1D6AE58E00749050 /* Build configuration list for PBXNativeTarget "gigaPetTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +540,7 @@
 				87EFDEDD1D6AE58E00749050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87EFDEDE1D6AE58E00749050 /* Build configuration list for PBXNativeTarget "gigaPetUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +549,7 @@
 				87EFDEE01D6AE58E00749050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

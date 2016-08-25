@@ -27,24 +27,37 @@
 \
 	After he dies, we still can interact with heart and food img. He also still can receive those img. After he died, and we drop in img on him, a "die" animation is performed. \
 	Game logic was written differently. Too much to rewrite to fix that. \
-\
-If i will be stuck for too long, move on to the next task.\
+	For some reason, can't disable "foodImg" and "heartImg" images. \
  \
 \'95 adding choosing character option: \
- 	should throw another UIImage on the screen. \
+\
 No, will simply throw 2 buttons on the screen. \
 \
-Lots of this will happen in the "viewDidLoad"\
-Also, we might change the "new game" method. \
-We should create our own class "character" or change the "monsterImg" class, to add option with another character. \
-because regardless of the character, everything stays the same, changes only image. \
+Easy way: \
+we create HumanImg subclass of UIImageView just like we created MonsterImg subclass. \
+Then we copy all code into that subclass. \
+Change the way animations are built. (figure out staff with file names)\
+We create 1 UIImageView in the storyboard, put human in it, make connection in the code. \
+In ViewController, in "startNewGame" we change the way our character being initialized. Basically it should be reusable, character initialization should happen in button actions. \
 \
-another instance of "monsterImg" should be the human. \
+Hard way: \
+We shouldn't repeat ourselves. We should create a class "monsterImg" with custom "init" method (convenience init), where one of the arguments will be images. \
+When we call for creation of a character, we will just plug image name to the init method. \
 \
 \
+\'95 adding "elixir" as 3rd item to give. \
 \
+(have to deal with "size class")\
+ \
 \
-  \
+Thursday 25th.\
+Had to deal with a problem,\
+Created "humanImg" class. Rewrote the animating process. \
+human image didn't want to appear when pressing the "human" button. \
+Fix was - when I added a new imageView to the storyBoard, i didn't specify that it is of a new class "HumanImg" in the inspector area. \
+\
+now need to hide choosing buttons and play the death animation. \
+Also done. \
 \
 \
 	 }
