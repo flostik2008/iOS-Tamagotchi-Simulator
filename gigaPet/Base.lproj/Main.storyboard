@@ -142,6 +142,60 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gIv-vV-2s0">
+                                <rect key="frame" x="22" y="246" width="358" height="218"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD9-dT-ixO">
+                                        <rect key="frame" x="20" y="20" width="318" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="318" id="YGN-is-BGa"/>
+                                            <constraint firstAttribute="height" constant="82" id="xUd-Bw-i7p"/>
+                                        </constraints>
+                                        <state key="normal" image="button1"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="YGN-is-BGa"/>
+                                                <exclude reference="xUd-Bw-i7p"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="YGN-is-BGa"/>
+                                                <include reference="xUd-Bw-i7p"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="stoneBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9d-52-r83"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-yU-XZ8">
+                                        <rect key="frame" x="20" y="116" width="318" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="KUQ-hI-RvS"/>
+                                            <constraint firstAttribute="width" constant="318" id="fZs-yI-Q3f"/>
+                                        </constraints>
+                                        <state key="normal" image="button2"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="KUQ-hI-RvS"/>
+                                                <exclude reference="fZs-yI-Q3f"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="KUQ-hI-RvS"/>
+                                                <include reference="fZs-yI-Q3f"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="humanBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fB5-MZ-Vtl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="42" y="266" width="318" height="184"/>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -167,8 +221,10 @@
                             <constraint firstItem="vDS-Oo-d2U" firstAttribute="centerY" secondItem="Tcw-6q-mJz" secondAttribute="centerY" id="nJs-LE-a9V"/>
                             <constraint firstItem="vDS-Oo-d2U" firstAttribute="centerX" secondItem="Tcw-6q-mJz" secondAttribute="centerX" id="qOS-Wz-DIs"/>
                             <constraint firstItem="ERh-nW-6ow" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rmK-DV-hV4"/>
+                            <constraint firstItem="gIv-vV-2s0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tsk-cn-jNK"/>
                             <constraint firstItem="Tcw-6q-mJz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ued-0q-DaV"/>
                             <constraint firstItem="ERh-nW-6ow" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ug4-uo-9a4"/>
+                            <constraint firstItem="gIv-vV-2s0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xym-kE-Vix"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -181,6 +237,8 @@
                                 <exclude reference="Pej-x7-6As"/>
                                 <exclude reference="iqc-vN-8NM"/>
                                 <exclude reference="ug4-uo-9a4"/>
+                                <exclude reference="tsk-cn-jNK"/>
+                                <exclude reference="xym-kE-Vix"/>
                                 <exclude reference="6Sx-PB-bLv"/>
                                 <exclude reference="K91-bK-LQo"/>
                                 <exclude reference="RM7-oB-2JM"/>
@@ -201,6 +259,8 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="Pej-x7-6As"/>
+                                <include reference="tsk-cn-jNK"/>
+                                <include reference="xym-kE-Vix"/>
                                 <include reference="6Sx-PB-bLv"/>
                                 <include reference="K91-bK-LQo"/>
                                 <include reference="RM7-oB-2JM"/>
@@ -226,6 +286,8 @@
     <resources>
         <image name="012_restart-128" width="128" height="128"/>
         <image name="bg" width="768" height="1024"/>
+        <image name="button1" width="308" height="82"/>
+        <image name="button2" width="308" height="82"/>
         <image name="food" width="95" height="98"/>
         <image name="ground" width="1444" height="151"/>
         <image name="heart" width="95" height="98"/>

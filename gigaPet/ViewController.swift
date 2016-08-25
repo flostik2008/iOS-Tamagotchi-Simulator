@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var gameOverLbl: UILabel!
     
+    
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
     let MAX_PENALTIES = 3
@@ -39,6 +40,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
+        
         startNewGame()
     }
     
@@ -47,6 +52,20 @@ class ViewController: UIViewController {
         startNewGame()
         
     }
+    
+    @IBAction func stoneBtn(sender: AnyObject) {
+        
+        // reveal character img, start the game.
+        // hide buttons.
+    }
+    
+    @IBAction func humanBtn(sender: AnyObject) {
+        
+        // reveal the other character img, start the game. 
+        // hide the buttons. 
+        
+    }
+
     
     
     func itemDroppedOnCharacter(notif: AnyObject){

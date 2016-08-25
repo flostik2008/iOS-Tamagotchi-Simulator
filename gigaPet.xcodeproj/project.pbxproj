@@ -63,7 +63,7 @@
 		87EFDEE91D6CE63500749050 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 		87EFDEEA1D6CE63500749050 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
 		87EFDEEB1D6CE63500749050 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
-		87EFDEF31D6CEDB400749050 /* LogicSteps.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = LogicSteps.rtf; sourceTree = "<group>"; };
+		87EFDEF31D6CEDB400749050 /* LogicSteps.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = LogicSteps.rtf; path = ../LogicSteps.rtf; sourceTree = "<group>"; };
 		87EFDEF51D6D0C9800749050 /* 8-Bit Madness copy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8-Bit Madness copy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,6 @@
 		87EFDEA71D6AE58D00749050 = {
 			isa = PBXGroup;
 			children = (
-				87EFDEF31D6CEDB400749050 /* LogicSteps.rtf */,
 				87EFDEB21D6AE58D00749050 /* gigaPet */,
 				87EFDEC71D6AE58E00749050 /* gigaPetTests */,
 				87EFDED21D6AE58E00749050 /* gigaPetUITests */,
@@ -121,6 +120,7 @@
 				87EFDEB51D6AE58D00749050 /* ViewController.swift */,
 				87EFDEB71D6AE58D00749050 /* Main.storyboard */,
 				87EFDEBA1D6AE58D00749050 /* Assets.xcassets */,
+				87EFDEF31D6CEDB400749050 /* LogicSteps.rtf */,
 				87EFDEE71D6CE63500749050 /* bite.wav */,
 				87EFDEE81D6CE63500749050 /* cave-music.mp3 */,
 				87EFDEE91D6CE63500749050 /* death.wav */,
