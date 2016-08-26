@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImg: DragImg!
+    @IBOutlet weak var elixirImg: DragImg!
     
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
@@ -54,6 +55,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func restartBtn(sender: AnyObject) {
+        
+        if timer != nil {
+            timer.invalidate()
+        }
         
         startNewGame()
         
@@ -95,6 +100,8 @@ class ViewController: UIViewController {
         foodImg.userInteractionEnabled = false
         heartImg.alpha = DIM_ALPHA
         heartImg.userInteractionEnabled = false
+        elixirImg.alpha = DIM_ALPHA
+        elixirImg.userInteractionEnabled = false
         
         if currentItem == 0 {
             sfxHeart.play()
@@ -138,19 +145,35 @@ class ViewController: UIViewController {
         }
         }
         
-        let rand = arc4random_uniform(2)
+        let rand = arc4random_uniform(3)
         if rand == 0 {
             foodImg.alpha = DIM_ALPHA
             foodImg.userInteractionEnabled = false
             
+            elixirImg.alpha = DIM_ALPHA
+            elixirImg.userInteractionEnabled = false
+            
             heartImg.alpha = OPAQUE
             heartImg.userInteractionEnabled = true
-        } else {
-            heartImg.alpha = DIM_ALPHA
-            heartImg.userInteractionEnabled = false
-            
+        } else if rand == 1 {
             foodImg.alpha = OPAQUE
             foodImg.userInteractionEnabled = true
+            
+            elixirImg.alpha = DIM_ALPHA
+            elixirImg.userInteractionEnabled = false
+            
+            heartImg.alpha = DIM_ALPHA
+            heartImg.userInteractionEnabled = false
+        
+        } else if rand == 2 {
+            foodImg.alpha = DIM_ALPHA
+            foodImg.userInteractionEnabled = false
+            
+            elixirImg.alpha = OPAQUE
+            elixirImg.userInteractionEnabled = true
+            
+            heartImg.alpha = DIM_ALPHA
+            heartImg.userInteractionEnabled = false
         }
         
         currentItem = rand
@@ -183,14 +206,16 @@ class ViewController: UIViewController {
         penelaties = 0
         timer = nil
         gameOverLbl.hidden = true
-        monsterHappy = false
+        monsterHappy = true
         currentItem = 0
         
         foodImg.alpha = OPAQUE
         heartImg.alpha = OPAQUE
+        elixirImg.alpha = OPAQUE
         
         foodImg.dropTarget = monsterImg
         heartImg.dropTarget = monsterImg
+        elixirImg.dropTarget = monsterImg
         
         penalty1Img.alpha = DIM_ALPHA
         penalty2Img.alpha = DIM_ALPHA
